@@ -1,4 +1,4 @@
-name: ace5pro带kpm
+name: 带kpm
 on:
   workflow_dispatch:
     inputs:
