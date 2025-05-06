@@ -9,7 +9,7 @@ on:
       FEIL:
         description: "配置文件"
         required: true
-        default: 'oneplus_ace5_pro'
+        default: 'oneplus_ace5'
       CPUD:
         description: "处理器代号"
         required: true
@@ -185,7 +185,7 @@ jobs:
          
       - name: Make AnyKernel3
         run: |
-         if [ "${{ github.event.inputs.FEIL }}" = "oneplus_13" ]; then
+         if [ "${{ github.event.inputs.FEIL }}" = "oneplus_ace5" ]; then
           git clone https://github.com/egcd123/AnyKernel3-ace5Pro.git --depth=1
          fi
          rm -rf ./AnyKernel3-ace5Pro/.git
